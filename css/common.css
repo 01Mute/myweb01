@@ -1,0 +1,97 @@
+div{
+  display: block;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+#wrap{
+  min-width: 1200px;
+  background-color: #bbb;
+}
+
+
+#header{
+  position: relative;
+  /*background-color: aqua;*/
+  background-color: #fff;
+  border-bottom: 1px solid #e4e8eb;
+  z-index: 2000;
+}
+
+
+#header .header_head-content{
+  position: relative;
+  width: 100%;
+  height: 160px;
+  display: flex;
+  margin: 0 10;
+}
+
+
+#header .header_head-content .header_head-content_logo {
+  height: 100%;
+}
+
+
+#header .header_head-content .header_head-content_search{
+  position: relative;
+  width: 40%;
+  margin: 60 0;
+}
+#header .header_head-content .header_head-content_search .form{
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+#header .header_head-content .header_head-content_search .form_input{
+  height: 40px;
+  width: 100%;
+  border: 2px solid #bbb;
+  padding: 10px 12px;
+  float: flex;
+}
+#header .header_head-content .header_head-content_search .form_input::placeholder{
+  color: #bbb;
+}
+#header .header_head-content .header_head-content_search .form_button{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-color: #bbb;
+  border: none;
+}
+
+
+#header .header_head-content .header_ad-box{
+  width: 10%;
+}
+
+
+#header .header_head-content .header_head-content_tools{
+  position: relative;
+  width: 30%;
+  right: 0px;
+  top: 60;
+}
+#header .header_head-content .header_head-content_tools .tools_list{
+  list-style: none;
+}
+#header .header_head-content .header_head-content_tools .tools_list .list_item{
+  display: inline-block;
+  margin: 0 10;
+}
+
+
+.blind{
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
