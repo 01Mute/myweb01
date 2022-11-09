@@ -1,5 +1,22 @@
+.blind{
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
 div{
   display: block;
+}
+
+
+ul{
+  list-style: none;
+  display: block;
+}
+
+
+li{
+  display: list_item;
 }
 
 
@@ -24,7 +41,14 @@ div{
 }
 
 
-#header .header_head-content{
+
+
+
+
+
+
+
+#header .head_content{
   position: relative;
   width: 100%;
   height: 160px;
@@ -33,32 +57,32 @@ div{
 }
 
 
-#header .header_head-content .header_head-content_logo {
+#header .head_content .head_content-logo {
   height: 100%;
 }
 
 
-#header .header_head-content .header_head-content_search{
+#header .head_content .head_content-search{
   position: relative;
   width: 40%;
   margin: 60 0;
 }
-#header .header_head-content .header_head-content_search .form{
+#header .head_content .head_content-search .form{
   position: relative;
   margin: 0;
   padding: 0;
 }
-#header .header_head-content .header_head-content_search .form_input{
+#header .head_content .head_content-search .form_input{
   height: 40px;
   width: 100%;
   border: 2px solid #bbb;
   padding: 10px 12px;
   float: flex;
 }
-#header .header_head-content .header_head-content_search .form_input::placeholder{
+#header .head_content .head_content-search .form_input::placeholder{
   color: #bbb;
 }
-#header .header_head-content .header_head-content_search .form_button{
+#header .head_content .head_content-search .form_button{
   position: absolute;
   top: 0;
   right: 0;
@@ -71,27 +95,95 @@ div{
 }
 
 
-#header .header_head-content .header_ad-box{
+#header .head_content .head_content-ad-box{
   width: 10%;
 }
 
 
-#header .header_head-content .header_head-content_tools{
+#header .head_content .head_content-tools{
   position: relative;
   width: 30%;
-  right: 0px;
-  top: 60;
 }
-#header .header_head-content .header_head-content_tools .tools_list{
-  list-style: none;
-}
-#header .header_head-content .header_head-content_tools .tools_list .list_item{
-  display: inline-block;
+#header .head_content .head_content-tools .list_tools .list_tools-item{
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
   margin: 0 10;
 }
 
 
-.blind{
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+
+
+
+
+
+
+
+#header .head_navigation{
+  position: relative;
+}
+
+
+#header .head_navigation .head_navigation-category{
+  width: 100%;
+}
+
+/*
+#header .head_navigation .head_navigation-category .category_1depth{
+}
+*/
+
+
+#header .head_navigation .head_navigation-category .category_1depth .category_1depth_list{
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+  background-color: yellowgreen;
+}
+#header .head_navigation .head_navigation-category .category_1depth .category_1depth_list .list_1depth-item{
+  background-color: yellow;
+}
+#header .head_navigation .head_navigation-category .category_1depth .category_1depth_list .list_1depth-item .link_1depth-item{
+  position: relative;
+  display: flex;
+  height: 40px;
+  width: 150px;
+  font-size: 15px;
+  letter-spacing: -1px;
+  color: blueviolet;
+  background-color: white;
+  line-height: 40px;
+  padding: 0 0;
+  cursor: pointer;
+}
+#header .head_navigation .head_navigation-category .category_1depth .category_1depth_list .list_1depth-item .link_1depth-item:hover{
+  color: #bbb;
+  background-color: blueviolet;
+}
+#header .head_navigation .head_navigation-category .category_1depth .category_1depth_list .list_1depth-item:hover > .category_2depth{
+  display: flex;
+}
+
+
+#header .head_navigation .head_navigation-category .category_1depth .category_2depth{
+  position: relative;
+  display: none;
+}
+#header .head_navigation .head_navigation-category .category_1depth .category_2depth .category_2depth_list{
+}
+
+#header .head_navigation .head_navigation-category .category-1depth .category_2depth .category-2depth_content .list-category-2depth{
+}
+#header .head_navigation .head_navigation-category .category_1depth .category_2depth_list .list_2depth-item:hover > .category_3depth{
+  display: flex;
+  left: 100%;
+  color: blue;
+  background-color: antiquewhite;
+}
+
+
+#header .head_navigation .head_navigation-category .category_1depth .category_2depth .category_3depth{
+  position: absolute;
+  width: 100%;
+  left: -9999px;
 }
